@@ -7,8 +7,8 @@ I began working on this 2024-12-15
 ## Tooling 
 
 
-* Arch Linux
-* [K3s](https://k3s.io/):
+* [Arch Linux]
+* [K3s](https://k3s.io/)
 
 
 ## Goals
@@ -18,4 +18,6 @@ I began working on this 2024-12-15
     * Argocd
     * Maybe try out Flux in the future
 
-Log
+##Log
+
+
