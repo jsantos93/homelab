@@ -7,7 +7,7 @@ I began working on this 2024-12-15
 ## Tooling 
 
 
-* [Arch Linux]
+* [Arch Linux](https://archlinux.org/)
 * [K3s](https://k3s.io/)
 
 
