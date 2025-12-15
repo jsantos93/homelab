@@ -16,7 +16,6 @@ metadata:
   name: prometheus
   namespace: monitoring
 spec:
-  interval: 10m
   chart:
     spec:
       chart: prometheus
