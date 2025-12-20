@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: n8n
+  namespace: n8n
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: n8n
+  template:
+    metadata:
+      labels:
+        app: n8n
+    spec:
+      containers:
+      - name: n8n
+        image: n8nio/n8n # Or specify your custom image if 'build' was used: <your-registry>/n8n
+        ports:
+        - containerPort: 5678
+        command:
+          - /bin/sh
+        args:
+          - -c
+          - sleep 5; n8n start
+        env:
+        - name: N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE
+          value: "true"
+        volumeMounts:
+        - name: n8n-storage
+          mountPath: /home/node/.n8n
+      volumes:
+      - name: n8n-storage
+        persistentVolumeClaim:
+          claimName: n8n-storage
