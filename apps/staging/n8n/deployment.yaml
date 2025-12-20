@@ -26,6 +26,8 @@ spec:
         env:
         - name: N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE
           value: "true"
+        - name: N8N_SECURE_COOKIE
+          value: "false"
         volumeMounts:
         - name: n8n-storage
           mountPath: /home/node/.n8n
