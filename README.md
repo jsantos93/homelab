@@ -10,6 +10,7 @@ I began working on this 2024-12-15
 * [Arch Linux](https://archlinux.org/)
 * [K3s](https://k3s.io/)
 * [Flux](https://fluxcd.io)
+* [N8N](https://n8n.io)
 
 
 ## Goals
